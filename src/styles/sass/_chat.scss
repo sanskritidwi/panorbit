@@ -1,0 +1,33 @@
+.ChatWrapper{
+    position: fixed;
+    bottom: 0px;
+    right: 48px;
+    width: 250px;
+    background-color: white;
+    .header{
+        background-color: $chatBlue;
+        div{
+            color: $white;
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 12px;
+            }
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px 8px 0px 0px;
+        padding: 8px;
+    }
+    .chatList{
+        height: 300px;
+        overflow-y: scroll;
+        ul
+        {
+            padding-inline-start: 12px;
+        }
+    }
+   
+    
+}

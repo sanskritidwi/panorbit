@@ -1,0 +1,22 @@
+.MapWrap{
+   
+    .map{
+        width: 500px;
+        height: 250px;
+        border-radius: 24px;
+        margin: 12px;
+    }
+    .latLong{
+        display: flex;
+        justify-content: flex-end;
+        margin: 12px;
+
+        .lat{
+            display: flex;
+            margin-right: 12px;
+            .keyName, .valueName{
+                font-size: 12px;
+            }
+        }
+    }
+}

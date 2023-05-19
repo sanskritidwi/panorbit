@@ -1,0 +1,20 @@
+$grey: #f6f6f6;
+$textGrey: #545454;
+$lightTextGrey: #A6A6A6;
+$lineGrey: #dcdcdc;
+$white: white;
+$primary: #6f43ca;
+$primaryLight: #7246cd;
+$chatBlue: #2C65C8;
+$red:#D55151;
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin borderBottomPadding {
+  padding: 12px;
+  border-bottom: 1px solid $lineGrey;
+}

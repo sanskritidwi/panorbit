@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #545454;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+* a {
+  text-decoration: none;
+  color: unset;
+}
+* .redBtn {
+  padding: 8px 16px;
+  color: #f6f6f6;
+  background-color: #D55151;
+  border: none;
+  border-radius: 20px;
+  margin: 12px;
+}
+* .nameInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: unset;
+}
+* .nameInfo img {
+  width: 30px;
+  border-radius: 50%;
+  margin: 8px;
+}
+* ::-webkit-scrollbar {
+  width: 4px;
+}
+* ::-webkit-scrollbar-track {
+  background: #f6f6f6;
+}
+* ::-webkit-scrollbar-thumb {
+  background: #dcdcdc;
+}
+* ::-webkit-scrollbar-thumb:hover {
+  background: #2C65C8;
+}
+
+.HomeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.HomeWrapper .cover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.HomeWrapper .content {
+  position: relative;
+  z-index: 100;
+}
+.HomeWrapper .content .ProfileListWrapper {
+  background-color: white;
+  width: 40vw;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #545454;
+}
+.HomeWrapper .content .ProfileListWrapper .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 24px 24px 0px 0px;
+  font-size: 20px;
+  padding: 24px;
+}
+.HomeWrapper .content .ProfileListWrapper ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  padding: 12px 24px;
+  max-height: 300px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+.HomeWrapper .content .ProfileListWrapper ul li {
+  margin: 4px;
+  border-bottom: 2px solid #f6f6f6;
+}
+.HomeWrapper .content .ProfileListWrapper ul li:hover {
+  background-color: #f6f6f6;
+}
+.HomeWrapper .content .ProfileListWrapper ul li:hover img {
+  transform: scale(1.1);
+}
+
+.ProfileHomeWrapper {
+  display: flex;
+  padding: 12px;
+}
+.ProfileHomeWrapper .MenuWrapper {
+  height: 80vh;
+  width: 160px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(92, 67, 202);
+  padding: 24px;
+}
+.ProfileHomeWrapper .MenuWrapper div {
+  cursor: pointer;
+  padding: 12px;
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ProfileHomeWrapper .MenuWrapper .activeMenu {
+  color: white;
+}
+.ProfileHomeWrapper .MenuWrapper .inactiveMenu {
+  color: #A6A6A6;
+}
+.ProfileHomeWrapper .HeaderWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #dcdcdc;
+  justify-content: space-between;
+  margin: 0px 24px;
+}
+.ProfileHomeWrapper .HeaderWrapper .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.ProfileHomeWrapper .HeaderWrapper .nameInfo {
+  position: relative;
+}
+.ProfileHomeWrapper .HeaderWrapper .signOutWrapper {
+  position: absolute;
+  top: 48px;
+  right: 24px;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #545454;
+  background-color: white;
+  padding: 24px;
+  z-index: 200;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+.ProfileHomeWrapper .HeaderWrapper .signOutWrapper .pp {
+  width: 100px;
+}
+.ProfileHomeWrapper .HeaderWrapper .signOutWrapper .name {
+  font-weight: 600;
+}
+.ProfileHomeWrapper .HeaderWrapper .signOutWrapper .email {
+  color: #A6A6A6;
+  margin-bottom: 12px;
+}
+.ProfileHomeWrapper .HeaderWrapper .signOutWrapper ul {
+  padding-inline-start: 0px;
+}
+.ProfileHomeWrapper .HeaderWrapper .signOutWrapper ul li {
+  border-top: 1px solid #dcdcdc;
+}
+
+.ComingSoonWrapper {
+  display: flex;
+  font-size: 120px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+  color: #dcdcdc;
+  font-weight: 900;
+}
+
+.ProfileInfoWrapper {
+  display: flex;
+  margin: 12px;
+}
+.ProfileInfoWrapper .keyName {
+  color: #A6A6A6;
+}
+.ProfileInfoWrapper .valueName {
+  font-weight: 600;
+}
+.ProfileInfoWrapper table {
+  width: 100%;
+  padding-bottom: 24px;
+}
+.ProfileInfoWrapper table thead {
+  text-align: center;
+  width: 100%;
+}
+.ProfileInfoWrapper table tbody tr img {
+  width: 200px;
+  border-radius: 50%;
+}
+.ProfileInfoWrapper table tbody tr td {
+  max-width: 200px;
+  margin: 12px;
+}
+.ProfileInfoWrapper table tbody tr td:nth-child(1) {
+  text-align: right;
+}
+.ProfileInfoWrapper .left {
+  margin: 12px;
+  border-right: 1px solid #dcdcdc;
+  width: 40%;
+}
+.ProfileInfoWrapper .left .personalDetailsWrapper {
+  padding: 12px;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 0px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 16px;
+}
+.ProfileInfoWrapper .left .personalDetailsWrapper img {
+  width: 200px;
+  border-radius: 50%;
+}
+.ProfileInfoWrapper .left .companyDetailsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ProfileInfoWrapper .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 24px;
+  width: 60%;
+}
+.MapWrap .map {
+  width: 500px;
+  height: 250px;
+  border-radius: 24px;
+  margin: 12px;
+}
+.MapWrap .latLong {
+  display: flex;
+  justify-content: flex-end;
+  margin: 12px;
+}
+.MapWrap .latLong .lat {
+  display: flex;
+  margin-right: 12px;
+}
+.MapWrap .latLong .lat .keyName, .MapWrap .latLong .lat .valueName {
+  font-size: 12px;
+}
+
+.ChatWrapper {
+  position: fixed;
+  bottom: 0px;
+  right: 48px;
+  width: 250px;
+  background-color: white;
+}
+.ChatWrapper .header {
+  background-color: #2C65C8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px 8px 0px 0px;
+  padding: 8px;
+}
+.ChatWrapper .header div {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.ChatWrapper .header div img {
+  margin-right: 12px;
+}
+.ChatWrapper .chatList {
+  height: 300px;
+  overflow-y: scroll;
+}
+.ChatWrapper .chatList ul {
+  padding-inline-start: 12px;
+}
+
+/*# sourceMappingURL=all.css.map */

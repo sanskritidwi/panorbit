@@ -1,0 +1,67 @@
+.ProfileInfoWrapper {
+  display: flex;
+margin: 12px;
+.keyName{
+    color: $lightTextGrey;
+}
+.valueName{
+    font-weight: 600;
+}
+  table {
+    width: 100%;
+    padding-bottom: 24px;
+    thead {
+      text-align: center;
+      width: 100%;
+    }
+    tbody {
+      tr {
+        img {
+          width: 200px;
+          border-radius: 50%;
+        }
+       
+        td{
+            max-width: 200px;
+            margin: 12px;
+        }
+        td:nth-child(1) {
+          text-align: right;
+        }
+      }
+    }
+  }
+  .left {
+    margin: 12px;
+    border-right: 1px solid $lineGrey;
+    width: 40%;
+    .personalDetailsWrapper {
+      @include borderBottomPadding;
+      padding: 0px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 12px 16px;
+
+      img {
+        width: 200px;
+        border-radius: 50%;
+      }
+    }
+    .companyDetailsWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 24px;
+    width: 60%;
+
+    .addressDetailsWrapper {
+    }
+  }
+}
